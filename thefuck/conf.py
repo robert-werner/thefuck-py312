@@ -14,7 +14,7 @@ try:
         module_spec.loader.exec_module(module)
         return module
 except ImportError:
-    from imp import load_source
+    from importlib import load_source
 
 
 class Settings(dict):
